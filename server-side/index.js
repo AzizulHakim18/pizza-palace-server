@@ -32,3 +32,5 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log('Pizza Burg app is running')
 })
+
+module.exports = app;
