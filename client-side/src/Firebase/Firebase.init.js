@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyChRWdYt_bpV43Q4-kwvc5YyQwK778NccA",
-    authDomain: "simple-firebase-56a13.firebaseapp.com",
-    projectId: "simple-firebase-56a13",
-    storageBucket: "simple-firebase-56a13.appspot.com",
-    messagingSenderId: "658961913956",
-    appId: "1:658961913956:web:2e9f2475e561f75de36771"
+    apiKey: "AIzaSyAdPXrTm6JR7AOWdUmYjfyMnw_XIZbDfdo",
+    authDomain: "pizza-palace-3e501.firebaseapp.com",
+    projectId: "pizza-palace-3e501",
+    storageBucket: "pizza-palace-3e501.appspot.com",
+    messagingSenderId: "737915838502",
+    appId: "1:737915838502:web:1a6f3c6b2121a904f986e7"
 };
 
 // Initialize Firebase
