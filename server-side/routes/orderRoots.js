@@ -58,6 +58,20 @@ router.post('/placeorder', async (req, res) => {
 
 });
 
+
+router.get("/placeorder", async (req, res) => {
+    try {
+        const placeOrders = await Order.find({})
+        res.send(placeOrders)
+    } catch (error) {
+        return res.status(400).json({ message: error });
+    }
+});
+
+
+
+
+
 router.post("/getuserorders", async (req, res) => {
     const { userid } = req.body
     try {
@@ -67,6 +81,14 @@ router.post("/getuserorders", async (req, res) => {
         return res.status(400).json({ message: 'something went wrong' })
     }
 })
+// router.get("/getuserorders", async (req, res) => {
+//     try {
+//         const placeOrders = await Order.find({})
+//         res.send(placeOrders)
+//     } catch (error) {
+//         return res.status(400).json({ message: error });
+//     }
+// });
 
 
 module.exports = router

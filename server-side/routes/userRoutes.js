@@ -16,6 +16,19 @@ router.post('/register', async (req, res) => {
     }
 });
 
+
+
+router.get("/register", async (req, res) => {
+    try {
+        const registerUsers = await User.find({})
+        res.send(registerUsers)
+    } catch (error) {
+        return res.status(400).json({ message: error });
+    }
+});
+
+
+
 router.post('/login', async (req, res) => {
 
     const { email, password } = req.body
@@ -39,5 +52,13 @@ router.post('/login', async (req, res) => {
         return res.status(400).json({ message: "User login Failed" })
     }
 })
+router.get("/login", async (req, res) => {
+    try {
+        const loginUsers = await User.find({})
+        res.send(loginUsers)
+    } catch (error) {
+        return res.status(400).json({ message: error });
+    }
+});
 
 module.exports = router

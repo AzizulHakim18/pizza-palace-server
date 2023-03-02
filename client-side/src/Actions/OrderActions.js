@@ -12,7 +12,7 @@ export const placeOrder = (token, subTotal) => async (dispatch, getState) => {
 
 
     try {
-        const response = await axios.post('/api/orders/placeorder', { token, subTotal, currentUser, cartItems })
+        const response = await axios.post('https://pizza-server-theta.vercel.app/api/orders/placeorder', { token, subTotal, currentUser, cartItems })
         dispatch({ type: 'PLACE_ORDER_SUCCESS' })
         console.log(response);
     } catch (error) {
