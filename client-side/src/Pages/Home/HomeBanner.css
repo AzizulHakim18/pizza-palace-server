@@ -1,0 +1,113 @@
+/* Default styles for home section */
+.home-section {
+
+
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url('https://img.freepik.com/free-vector/fast-free-delivery-logo-with-bike-man-courier-city_1308-46851.jpg?w=1380&t=st=1677731033~exp=1677731633~hmac=a164b29513b2a142a939a422b05e16c3c0e1f33291d9fb901207f5386955ca36');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section-content {
+    text-align: center;
+    color: black;
+}
+
+.home-section-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home-section-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+h2 {
+    color: #fff;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.order-mouse {
+    border-radius: 50px;
+    border: 5px solid #000000;
+    height: 100px;
+    width: 50px;
+    position: absolute;
+}
+
+.move {
+    position: absolute;
+    background-color: #000000;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-50%, 10px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(-50%, 40px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 80px);
+        opacity: 0;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .home-section {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .home-section-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .home-section-content p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-order-now {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+    .home-section-content h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .home-section-content p {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-order-now {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+}
